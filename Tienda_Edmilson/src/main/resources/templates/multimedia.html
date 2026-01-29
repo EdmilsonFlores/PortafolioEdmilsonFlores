@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>TechShop</title>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Multimedia</h1>
-    </header>
-    <aside>
-        <h1>Multimedia</h1>
-        <p>Incorporación de recursos multimedia en el sitio web...</p>
-    </aside>
-    <section>
-        <h2>Uso de Multimedia</h2>
-        <article>
-            <h3>Música Celta</h3>
-            <audio controls>
-                <source src="/audios/musica.mp3" type="audio/mpeg">
-                Your browser does not support the <code>audio</code> tag.
-            </audio>
-        </article>
-        <article>
-            <h3>Película de Acción</h3>
-            <video width="320" height="240" controls>
-                <source src="/videos/torpedo.mp4" type="video/mp4">
-                Your browser does not support the <code>video</code> tag.
-            </video>
-        </article>
-    </section>
-    <footer>
-        Todos los Derechos Reservados TechShop 2025 &COPY;
-    </footer>
+
+<header class="header">
+    <nav class="nav">
+        <a class="logo_nav-link" href="/">TechShop</a>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="/ejemplo2">Mis Autos</a></li>
+            <li class="nav-menu-item"><a href="/multimedia">Multimedia</a></li>
+            <li class="nav-menu-item"><a href="/iframes">iFrames</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="layout">
+    <aside class="sidebar"></aside>
+
+    <main class="content">
+        <h2>Multimedia</h2>
+
+        <h3>Música</h3>
+        <audio controls>
+            <source src="/audios/musica.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>Video</h3>
+        <video controls width="400">
+            <source src="/videos/video.mp4" type="video/mp4">
+        </video>
+    </main>
+</div>
+
+<footer class="footer">
+    Todos los Derechos Reservados TechShop 2025 ©
+</footer>
+
 </body>
 </html>
